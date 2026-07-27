@@ -1,0 +1,35 @@
+Sales Report,Generated: 2026-07-02 16:48
+
+Total Revenue,"$4,743,200.00"
+Total Orders,29
+
+Order ID,Customer,Amount,Status,Date
+ORD-1782997228990-j1e5o,minlen,"$47,000.00",pending,2026-07-02
+ORD-1782997170281-5bpe1,imane,"$544,100.00",pending,2026-07-02
+ORD-1782997138932-1tpve,sdfgh,"$456,700.00",pending,2026-07-02
+ORD-1782932188180-rez8p,minlen,"$106,500.00",delivered,2026-07-01
+ORD-1782907598986-a5fdc,lmib,"$484,200.00",delivered,2026-07-01
+ORD-1782907360069-5fav2,imane,"$14,200.00",delivered,2026-07-01
+ORD-1782829623823-yyj5j,imaln,"$365,800.00",delivered,2026-06-30
+ORD-1782816298032-qimzs,imane,"$251,400.00",delivered,2026-06-30
+ORD-1782816068041-chsd7,imane,$900.00,delivered,2026-06-30
+ORD-1782816036639-1g0p0,Nadia Hassan,"$4,500.00",pending,2026-06-30
+ORD-1782816021307-498th,Lina Ahmed,"$2,000.00",delivered,2026-06-30
+ORD-1782578777880-ksbcl,imane,"$100,000.00",pending,2026-06-27
+ORD-1782578618480-9es1l,lmib,"$4,500.00",pending,2026-06-27
+ORD-1782578593464-qcayg,lmib,"$201,200.00",pending,2026-06-27
+ORD-1782563032425-2jex8,Lina Ahmed,"$1,200.00",pending,2026-06-27
+ORD-1782562991741-t5m3u,imane,"$4,500.00",pending,2026-06-27
+ORD-20260626-0006,Lina Ahmed,"$276,500.00",delivered,2026-06-21
+ORD-20260626-0003,Lina Ahmed,"$10,500.00",delivered,2026-06-14
+ORD-20260626-0005,Lina Ahmed,"$539,800.00",processing,2026-06-06
+ORD-20260626-0002,Sara Mohamed,"$172,500.00",delivered,2026-06-01
+ORD-20260626-0013,Ahmed Ben Ali,"$305,000.00",delivered,2026-05-31
+ORD-20260626-0010,Khaled Ibrahim,"$289,000.00",delivered,2026-05-26
+ORD-20260626-0008,Lina Ahmed,"$44,800.00",processing,2026-05-15
+ORD-20260626-0007,Youssef Omar,"$201,000.00",delivered,2026-05-15
+ORD-20260626-0012,Lina Ahmed,"$12,000.00",delivered,2026-05-03
+ORD-20260626-0009,Youssef Omar,"$158,500.00",shipped,2026-05-02
+ORD-20260626-0001,Nadia Hassan,"$8,000.00",delivered,2026-04-14
+ORD-20260626-0011,Sara Mohamed,"$113,000.00",processing,2026-04-06
+ORD-20260626-0004,Lina Ahmed,"$23,900.00",shipped,2026-04-05

@@ -1,0 +1,14 @@
+Sales Report,Generated: 2026-06-24 13:43
+
+Total Revenue,"$6,159.85"
+Total Orders,8
+
+Order ID,Customer,Amount,Status,Date
+ORD-1782304623035-71eej,imane,$399.99,pending,2026-06-24
+ORD-1782304493070-zsn8u,Layla Ibrahim,$179.99,pending,2026-06-24
+ORD-1-1,Ahmed Mansour,"$1,199.97",delivered,2026-06-24
+ORD-2-1,Sara Al-Rashid,$79.98,delivered,2026-06-24
+ORD-3-1,Omar Hassan,$399.99,processing,2026-06-24
+ORD-4-1,Layla Ibrahim,"$3,299.97",shipped,2026-06-24
+ORD-5-2,Youssef Karim,$499.98,shipped,2026-06-24
+ORD-5-1,Youssef Karim,$99.98,delivered,2026-06-24
