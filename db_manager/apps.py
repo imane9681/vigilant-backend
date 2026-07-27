@@ -1,0 +1,8 @@
+# db_manager/apps.py
+
+from django.apps import AppConfig
+
+class DbManagerConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'db_manager'
+    verbose_name = 'Database Manager'
