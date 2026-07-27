@@ -24,10 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vigilant-backend-8owb.onrender.com']
 
 # Application definition
 
@@ -169,8 +168,9 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "http://localhost:5173",  # ⬅️ أضف هذا
-    "http://127.0.0.1:5173",  # ⬅️ أضف هذا
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://vigilant-backend-8owb.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
