@@ -12,15 +12,16 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 import os
 from pathlib import Path
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
+# ============================================
+# ✅ SECURITY WARNING
+# ============================================
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -28,7 +29,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vigilant-backend-8owb.onrender.com']
 
-# Application definition
+
+# ============================================
+# ✅ Application definition
+# ============================================
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -57,9 +61,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # ⬅️ يجب أن يكون الأول
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # CORS middleware
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -88,8 +92,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# ============================================
+# ✅ Database
+# ============================================
 
 DATABASES = {
     'default': {
@@ -105,8 +110,9 @@ if not os.path.exists(DATABASE_BACKUP_PATH):
     print(f"✅ Created backup directory: {DATABASE_BACKUP_PATH}")
 
 
-# Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
+# ============================================
+# ✅ Password validation
+# ============================================
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -124,8 +130,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
+# ============================================
+# ✅ Internationalization
+# ============================================
 
 LANGUAGE_CODE = 'en-us'
 
@@ -136,48 +143,22 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
+# ============================================
+# ✅ Static & Media files
+# ============================================
 
 STATIC_URL = 'static/'
 
-# Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATA_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10MB
 FILE_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10MB
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# REST Framework settings
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ],
-    'DEFAULT_PARSER_CLASSES': [
-        'rest_framework.parsers.JSONParser',
-        'rest_framework.parsers.FormParser',
-        'rest_framework.parsers.MultiPartParser',
-    ],
-}
-
-# CORS settings
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://vigilant-backend-8owb.onrender.com",
-    "https://vigilant-frontend-beta.vercel.app",
-]
-
-CORS_ALLOW_CREDENTIALS = True
 
 # ============================================
-# ✅ JWT Authentication Settings
+# ✅ REST Framework
 # ============================================
 
 REST_FRAMEWORK = {
@@ -187,9 +168,17 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+    ],
 }
 
-from datetime import timedelta
+
+# ============================================
+# ✅ JWT Settings
+# ============================================
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
@@ -199,47 +188,56 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
+
 # ============================================
-# ✅ Session Settings
+# ✅ CORS Settings (المهمة)
 # ============================================
 
-# ✅ السماح بجلسات متعددة (True) أو جلسة واحدة فقط (False)
-SESSION_ALLOW_MULTIPLE = True
-
-# ✅ إعدادات الجلسات الآمنة
-SESSION_COOKIE_SECURE = False  # ✅ False للتطوير المحلي
-SESSION_COOKIE_HTTPONLY = True
-SESSION_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_AGE = 3600  # ساعة واحدة
-SESSION_SAVE_EVERY_REQUEST = True
-
-# ✅ CORS Settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://vigilant-backend-8owb.onrender.com",
+    "https://vigilant-frontend-beta.vercel.app",  # ⬅️ رابط Vercel
 ]
+
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
 
-# config/settings.py - أضف هذه الإعدادات في نهاية الملف
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
 
 # ============================================
-# ✅ إعدادات الجلسات المتقدمة
+# ✅ Session Settings
 # ============================================
 
-# ✅ عدد الجلسات النشطة المسموح بها لكل مستخدم
-MAX_ACTIVE_SESSIONS_PER_USER = 1
+SESSION_ALLOW_MULTIPLE = True
 
-# ✅ عدد الأيام للاحتفاظ بالجلسات غير النشطة
-INACTIVE_SESSION_RETENTION_DAYS = 7
-
-# ✅ عدد الأيام للاحتفاظ بالجلسات المنتهية
-EXPIRED_SESSION_RETENTION_DAYS = 30
-
-# ✅ إعدادات الجلسات الأساسية
-SESSION_COOKIE_AGE = 3600  # ساعة واحدة
-SESSION_SAVE_EVERY_REQUEST = True
+SESSION_COOKIE_SECURE = False  # False للتطوير المحلي
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_AGE = 3600  # ساعة واحدة
+SESSION_SAVE_EVERY_REQUEST = True
+
+MAX_ACTIVE_SESSIONS_PER_USER = 1
+INACTIVE_SESSION_RETENTION_DAYS = 7
+EXPIRED_SESSION_RETENTION_DAYS = 30
