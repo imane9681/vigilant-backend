@@ -199,7 +199,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://vigilant-backend-8owb.onrender.com",
-    "https://vigilant-frontend-beta.vercel.app",  # ⬅️ رابط Vercel
+    "https://vigilant-frontend.vercel.app",  # ⬅️ رابط Vercel
 ]
 
 CORS_ALLOW_CREDENTIALS = True
