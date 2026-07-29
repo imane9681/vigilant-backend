@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# ✅ ✅ ✅ تم التعديل هنا - DEBUG = True للتطوير المحلي
+DEBUG = True  # ⬅️ من False إلى True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vigilant-backend-8owb.onrender.com']
 
@@ -144,13 +144,18 @@ USE_TZ = True
 
 
 # ============================================
-# ✅ Static & Media files
+# ✅ ✅ ✅ Static & Media files (تم التعديل)
 # ============================================
 
-STATIC_URL = 'static/'
+# ✅ Static files
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# ✅ Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# ✅ حجم الملفات المسموح
 DATA_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10MB
 FILE_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10MB
 
@@ -190,7 +195,7 @@ SIMPLE_JWT = {
 
 
 # ============================================
-# ✅ CORS Settings (المهمة)
+# ✅ CORS Settings
 # ============================================
 
 CORS_ALLOWED_ORIGINS = [
@@ -199,7 +204,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://vigilant-backend-8owb.onrender.com",
-    "https://vigilant-frontend-beta.vercel.app",  # ⬅️ رابط Vercel
+    "https://vigilant-frontend-beta.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
