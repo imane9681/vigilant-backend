@@ -613,8 +613,9 @@ class ProductViewSet(viewsets.ModelViewSet):
             
             # ✅ حساب إجمالي المبيعات لكل منتج
             product_sales = OrderItem.objects.values('product_id').annotate(
-                total_sold=Sum('quantity')
-            ).order_by('-total_sold')[:limit]
+                total_sold=Sum('quantity'),
+                total_revenue=Sum(F('price') * F('quantity'))
+            ).order_by('-total_revenue')[:limit]
             
             product_ids = [item['product_id'] for item in product_sales if item['product_id']]
             
@@ -721,7 +722,7 @@ class ProductViewSet(viewsets.ModelViewSet):
                 })
             
             # ✅ ترتيب حسب إجمالي المبيعات
-            result.sort(key=lambda x: x['sold_count'], reverse=True)
+            result.sort(key=lambda x: x['revenue'], reverse=True)
             
             print(f"\n✅ Returning {len(result)} products")
             print("=" * 60)
