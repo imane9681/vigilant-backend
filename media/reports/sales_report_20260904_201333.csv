@@ -1,0 +1,106 @@
+Sales Report,Generated: 2026-09-04 20:13
+
+Total Revenue,"$399,705.00"
+Total Orders,151
+
+Order ID,Customer,Amount,Status,Date
+ORD-2026-09-03-06,Yuki Tanaka,$845.00,shipped,2026-09-04
+ORD-1788549114079-dn8us,Emma Thompson,"$10,150.00",pending,2026-09-04
+ORD-1788547449497-a9an6,David Chen,"$2,250.00",pending,2026-09-04
+ORD-1788547286436-bj4zd,John Smith,"$6,400.00",pending,2026-09-04
+ORD-1788547022387-8pa6m,Yuki Tanaka,"$18,000.00",pending,2026-09-04
+ORD-2026-09-02-03,John Smith,$510.00,delivered,2026-09-04
+ORD-2026-09-01-01,David Chen,"$3,080.00",delivered,2026-09-04
+ORD-2026-09-04-07,Fatima Al-Fahd,$560.00,delivered,2026-09-04
+ORD-2026-09-03-05,Carlos Rodriguez,"$1,600.00",delivered,2026-09-03
+ORD-2026-09-02-04,Anna Kowalski,"$1,030.00",delivered,2026-09-03
+ORD-2026-09-04-08,Liam O'Brien,"$1,280.00",processing,2026-09-03
+ORD-2026-09-01-02,Maria Garcia,"$1,160.00",delivered,2026-09-02
+ORD-2026-00029,Isabella Thomas,"$3,820.00",delivered,2026-08-27
+ORD-2026-00090,Hassan Belkacem,"$2,150.00",delivered,2026-08-27
+ORD-2025-00032,Michael Brown,$915.00,delivered,2026-08-26
+ORD-2025-00049,Olivia Martinez,"$4,600.00",delivered,2026-08-25
+ORD-2026-00073,William Johnson,"$1,135.00",delivered,2026-08-23
+ORD-2025-00029,Michael Brown,"$3,060.00",delivered,2026-08-23
+ORD-2026-00059,Fatima Zahra,"$1,045.00",delivered,2026-08-23
+ORD-2025-00028,Sara Bennani,"$5,100.00",delivered,2026-08-23
+ORD-2025-00017,Michael Brown,"$1,540.00",delivered,2026-08-22
+ORD-2025-00056,Nadia Tazi,"$1,900.00",delivered,2026-08-19
+ORD-2026-00085,Hassan Belkacem,"$3,545.00",delivered,2026-08-19
+ORD-2026-00008,Fatima Zahra,$530.00,pending,2026-08-18
+ORD-2026-00061,Sophia Davis,"$1,425.00",processing,2026-08-13
+ORD-2026-00052,Mohamed Alaoui,"$1,660.00",processing,2026-08-10
+ORD-2026-00001,Isabella Thomas,"$8,030.00",shipped,2026-08-08
+ORD-2026-00067,Michael Brown,$200.00,delivered,2026-08-03
+ORD-2026-00047,Youssef El Fassi,"$3,800.00",delivered,2026-07-26
+ORD-2025-00058,William Johnson,"$7,300.00",delivered,2026-07-23
+ORD-2026-00065,Sara Bennani,"$1,520.00",delivered,2026-07-19
+ORD-2025-00034,Olivia Martinez,"$1,360.00",delivered,2026-07-11
+ORD-2026-00010,Olivia Martinez,"$4,580.00",pending,2026-07-10
+ORD-2026-00077,Isabella Thomas,"$4,480.00",processing,2026-07-10
+ORD-2026-00005,Sophia Davis,"$2,740.00",delivered,2026-07-06
+ORD-2025-00006,Daniel Garcia,"$1,850.00",delivered,2026-06-29
+ORD-2026-00084,Olivia Martinez,$230.00,delivered,2026-06-26
+ORD-2025-00060,Nadia Tazi,"$1,460.00",delivered,2026-06-26
+ORD-2025-00007,Leila Benjelloun,"$1,410.00",shipped,2026-06-25
+ORD-2026-00017,Isabella Thomas,"$1,120.00",delivered,2026-06-25
+ORD-2025-00046,Alexander Taylor,$620.00,delivered,2026-06-22
+ORD-2025-00022,Daniel Garcia,$570.00,delivered,2026-06-20
+ORD-2026-00046,Karim Idrissi,$520.00,pending,2026-06-15
+ORD-2026-00030,Sara Bennani,$780.00,pending,2026-06-14
+ORD-2026-00014,Mohamed Alaoui,"$6,350.00",delivered,2026-06-13
+ORD-2026-00026,James Anderson,"$3,265.00",shipped,2026-06-13
+ORD-2026-00058,Karim Idrissi,$480.00,delivered,2026-06-12
+ORD-2026-00045,James Anderson,$620.00,delivered,2026-06-11
+ORD-2026-00066,Youssef El Fassi,"$2,500.00",delivered,2026-06-09
+ORD-2026-00037,Sophia Davis,"$1,440.00",delivered,2026-06-08
+ORD-2026-00044,Youssef El Fassi,"$5,200.00",delivered,2026-06-04
+ORD-2025-00002,Ahmed Mansouri,"$2,450.00",delivered,2026-05-26
+ORD-2026-00088,Ahmed Mansouri,$650.00,delivered,2026-05-23
+ORD-2026-00083,Alexander Taylor,"$1,700.00",shipped,2026-05-18
+ORD-2025-00053,Alexander Taylor,"$3,350.00",shipped,2026-05-16
+ORD-2025-00011,James Anderson,"$2,080.00",delivered,2026-05-12
+ORD-2026-00022,Alexander Taylor,$705.00,pending,2026-05-10
+ORD-2025-00036,Mohamed Alaoui,"$3,400.00",processing,2026-05-09
+ORD-2026-00062,Michael Brown,$865.00,delivered,2026-05-07
+ORD-2026-00012,Sara Bennani,"$5,210.00",delivered,2026-05-06
+ORD-2025-00024,Mia Robinson,"$2,025.00",delivered,2026-04-19
+ORD-2025-00033,Fatima Zahra,"$1,650.00",delivered,2026-04-19
+ORD-2026-00089,Mia Robinson,"$2,280.00",delivered,2026-04-18
+ORD-2026-00042,Youssef El Fassi,"$1,960.00",delivered,2026-04-17
+ORD-2025-00016,Mia Robinson,$345.00,delivered,2026-04-13
+ORD-2025-00019,Michael Brown,"$3,220.00",delivered,2026-04-08
+ORD-2026-00006,Mia Robinson,"$5,160.00",delivered,2026-04-08
+ORD-2025-00004,Mohamed Alaoui,"$3,900.00",delivered,2026-04-05
+ORD-2026-00043,Mohamed Alaoui,"$1,960.00",delivered,2026-03-24
+ORD-2025-00018,Fatima Zahra,"$1,155.00",delivered,2026-03-23
+ORD-2026-00013,Hassan Belkacem,"$1,610.00",delivered,2026-03-19
+ORD-2025-00042,Karim Idrissi,$695.00,delivered,2026-03-14
+ORD-2026-00079,Hassan Belkacem,"$3,450.00",delivered,2026-03-13
+ORD-2025-00020,Youssef El Fassi,"$7,650.00",delivered,2026-03-13
+ORD-2026-00007,Sophia Davis,"$1,950.00",delivered,2026-03-12
+ORD-2025-00030,Fatima Zahra,$730.00,delivered,2026-03-11
+ORD-2026-00078,Nadia Tazi,"$5,500.00",delivered,2026-03-03
+ORD-2025-00043,William Johnson,"$1,075.00",delivered,2026-02-28
+ORD-2025-00008,Youssef El Fassi,"$2,500.00",delivered,2026-02-27
+ORD-2026-00038,Mohamed Alaoui,"$3,190.00",delivered,2026-02-01
+ORD-2026-00023,Isabella Thomas,"$3,200.00",processing,2026-01-31
+ORD-2025-00052,Amina Chraibi,"$4,220.00",delivered,2026-01-27
+ORD-2026-00087,Youssef El Fassi,"$4,355.00",delivered,2026-01-27
+ORD-2026-00009,Olivia Martinez,"$4,745.00",delivered,2026-01-24
+ORD-2025-00014,Karim Idrissi,$710.00,delivered,2026-01-19
+ORD-2026-00081,Amina Chraibi,"$1,140.00",shipped,2026-01-14
+ORD-2025-00040,Karim Idrissi,"$1,530.00",delivered,2026-01-08
+ORD-2026-00040,William Johnson,"$4,640.00",delivered,2026-01-07
+ORD-2026-00027,Karim Idrissi,"$5,000.00",processing,2026-01-06
+ORD-2026-00033,Alexander Taylor,"$4,640.00",delivered,2026-01-05
+ORD-2026-00064,Olivia Martinez,$870.00,delivered,2026-01-02
+ORD-2026-00039,Leila Benjelloun,"$4,240.00",delivered,2025-12-24
+ORD-2026-00050,Ahmed Mansouri,"$1,500.00",delivered,2025-12-22
+ORD-2026-00054,Amina Chraibi,"$5,010.00",delivered,2025-12-16
+ORD-2025-00003,Alexander Taylor,$485.00,delivered,2025-12-12
+ORD-2025-00057,Nadia Tazi,$370.00,shipped,2025-12-10
+ORD-2026-00028,Sophia Davis,"$3,480.00",delivered,2025-12-10
+ORD-2026-00011,Michael Brown,$100.00,delivered,2025-12-03
+ORD-2025-00059,Nadia Tazi,"$1,765.00",delivered,2025-12-01
+ORD-2026-00015,Amina Chraibi,"$4,740.00",delivered,2025-11-29
