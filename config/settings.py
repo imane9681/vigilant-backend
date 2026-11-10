@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 from pathlib import Path
 from datetime import timedelta
 
@@ -22,12 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # ✅ SECURITY WARNING
 # ============================================
 
-SECRET_KEY = 'django-insecure-your-secret-key-here'
+load_dotenv()
 
-# ✅ ✅ ✅ تم التعديل هنا - DEBUG = True للتطوير المحلي
-DEBUG = True  # ⬅️ من False إلى True
-
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vigilant-backend-8owb.onrender.com']
+SECRET_KEY = os.environ.get('SECRET_KEY')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
 
 # ============================================
