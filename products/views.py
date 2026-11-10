@@ -28,7 +28,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     """
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     parser_classes = [MultiPartParser, FormParser, JSONParser]
     
     def get_queryset(self):
@@ -783,7 +783,7 @@ class ProductViewSet(viewsets.ModelViewSet):
 class PromotionViewSet(viewsets.ModelViewSet):
     queryset = Promotion.objects.all()
     serializer_class = PromotionSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     
     def get_queryset(self):
         queryset = Promotion.objects.all()
@@ -883,7 +883,7 @@ class PromotionViewSet(viewsets.ModelViewSet):
 class ReportViewSet(viewsets.ModelViewSet):
     queryset = Report.objects.all()
     serializer_class = ReportSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     
     @action(detail=False, methods=['post'])
     def generate(self, request):
@@ -1079,7 +1079,7 @@ class ReportViewSet(viewsets.ModelViewSet):
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     
     def get_queryset(self):
         queryset = Category.objects.all()

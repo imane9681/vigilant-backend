@@ -42,7 +42,7 @@ def calculate_growth(current, previous):
 
 
 @api_view(['GET'])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def dashboard_metrics(request):
     """
     Dashboard Metrics - Professional Implementation
@@ -254,7 +254,7 @@ def dashboard_metrics(request):
 
 
 @api_view(['GET'])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def sales_data(request):
     """بيانات المبيعات للرسم البياني مع حساب النمو"""
     try:
@@ -343,7 +343,7 @@ def sales_data(request):
 
 
 @api_view(['GET'])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def revenue_data(request):
     """بيانات الإيرادات"""
     try:
